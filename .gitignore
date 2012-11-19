@@ -1,0 +1,10 @@
+/.idea
+*.pyc
+.idea/*
+# Ignore the default SQLite database.
+/db/*.sqlite3
+.DS*
+
+# Ignore all logfiles and tempfiles.
+/log/*.log
+/tmp
