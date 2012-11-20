@@ -1,0 +1,20 @@
+<html>
+<head>
+    <title>contact diary</title>
+</head>
+<body>
+<table border="1" cellpadding="10">
+    <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Phone Number</th>
+    </tr>
+    {% for contact in contacts %}
+        <tr>
+            <td>{{contact.person.first_name}}</td>
+            <td>{{contact.person.last_name}}</td>
+            <td>{{contact.number}}</td>
+        </tr>
+    {% endfor %}
+</table>
+</body>
