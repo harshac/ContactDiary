@@ -1,0 +1,13 @@
+<html>
+<head>
+    <title>Add new contact</title>
+</head>
+<body>
+    <form action = "/create" method = "POST">
+        {% csrf_token %}
+        {{ person_form.as_p }}
+        {{ phone_form.as_p }}
+        <input type = "submit" name = "Submit" value = "Add"/>
+    </form>
+</body>
+</html>
